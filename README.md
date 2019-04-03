@@ -34,14 +34,14 @@ case no `values` prop is passed.
 
 Create a new component in `src/` called `Cell`. The `Cell` component will give
 us our first chance to use `state`. We want each `Cell` to keep track of a
-single `state` value: `color`, (which will be a 3 digit hex value i.e. '#FFF'). 
+single `state` value: `color`, (which will be a 3 digit hex value i.e. '#FFF').
 
 1. Define a `constructor` method in `Cell`, which sets an initial state key of `color` to the `value` prop which is passed from its parent component. Remember to call `super()` on the first line of the constructor (this is required in React components if we are to use `this` in the constructor). Additionally, for props to be accessible within the constructor, we need to pass `props` to both the constructor _as well as_ `super`. Ultimately, our constructor should look something like this:
 
 ```js
 constructor(props) {
   super(props)
-  // ...define initial state with a key of 'color' set to the 'value' prop
+  ...define initial state with a key of 'color' set to the 'value' prop
 }
 ```
 
